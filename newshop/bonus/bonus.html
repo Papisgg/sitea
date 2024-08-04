@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta itemprop="description" content="Магазин игрового доната!">
+        <meta itemprop="og:description" content="Магазин игрового доната!">
+        <link media="all" href="../cache/autoptimize/css/autoptimize_aaf5c9c3e99953ea307bc2b321fbbb73.css" rel="stylesheet">
+        <title>Epic Store</title>
+        <meta name='robots' content='max-image-preview:large'/>
+        <link href='https://fonts.gstatic.com' crossorigin='anonymous' rel='preconnect'/>
+        <meta name="generator" content="WordPress 6.6"/>
+        <meta name="generator" content="WooCommerce 8.9.3"/>
+        <meta name="generator" content="webp-uploads 2.0.1">
+        <link rel="icon" href="../minilogo.png"/>
+        <link rel="shortcut icon" href="../minilogo.png"/>
+    </head>
+    <body>
+
+        <div class="container" id="container">
+            <section id="header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col t-logo">
+                            <a href="../index.html">
+                                <img class='light-logo' src="../darklogo.png">
+                            </a>
+                        </div>
+                        <ul id="menu-primary" class="col t-nav t-desktop">
+                            <li class="t-nav-link">
+                                <a href="../reviews/reviews.html">Отзывы</a>
+                            </li>
+                            <li class="t-nav-link">
+                                <a href="../help/help.html">Поддержка</a>
+                            </li>
+                            <li class="t-nav-link">
+                                <a href="../bonus/bonus.html">Бонусы и розыгрыши</a>
+                            </li>
+                        </ul>
+                            <div class="col-auto t-login">
+                                <a class="login-btn round-btn text-center" href="../accaunt/login.html">Войти </a>
+                            </div>
+                            <div class="col-auto t-menu">
+                                <a class="t-menu-ico menu-btn"></a>
+                            </div>
+                    </div>
+                </div>
+                <nav class="mobile-nav">
+                    <div class="mobile-nav__inner">
+                        <ul id="menu-mobile-menu" class="">
+                            <li class="pushy-link">
+                                <a href="reviews.html">Отзывы</a>
+                            </li>
+                            <li class="pushy-link">
+                                <a href="../help/help.html">Поддержка</a>
+                            </li>
+                            <li class="pushy-link">
+                                <a href="../bonus/bonus.html">Бонусы и розыгрыши</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <script>
+                    const menuButton = document.querySelector('.t-menu');
+                    const mobileNav = document.querySelector('.mobile-nav');
+
+                    menuButton.addEventListener('click', () => {
+                    mobileNav.classList.toggle('active');
+                    });
+                </script>
+            </section>
+        </div>
+        <div class="main-wrapper">
+            <div class="content-wrapper">
+                <div class="giveaway-wrapper">
+                    <div class="container">
+                        <div class="row justify-content-center align-items-center title">
+                            <h1 class="support-title text-center">Бонусы и розыгрыши</h1>
+                        </div>
+                        <div class="row">
+                            <div class="block-section block-section-border text-center fs-4">На данный момент нету активных розыгрышей :(</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Проверяем, есть ли сохраненный email в локальном хранилище
+        const savedEmail = localStorage.getItem('email');
+
+        if (savedEmail) {
+            // Получаем все ссылки с указанными классами
+            const links = document.querySelectorAll('.login-btn.round-btn.text-center');
+
+            // Применяем изменения
+            links.forEach(link => {
+                link.className = 'account-btn'; // Заменяем класс
+                link.textContent = ''; // Удаляем текст внутри ссылки
+                link.href = '../accaunt/myAccaunt.html'; // Устанавливаем ссылку на файл myAccount.html
+            });
+        }
+    </script>
+
+
+
+</body>
+</html>

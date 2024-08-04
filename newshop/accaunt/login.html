@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta itemprop="description" content="Магазин игрового доната!">
+        <meta itemprop="og:description" content="Магазин игрового доната!">
+        <link media="all" href="../cache/autoptimize/css/autoptimize_aaf5c9c3e99953ea307bc2b321fbbb73.css" rel="stylesheet">
+        <title>Epic Store</title>
+        <meta name='robots' content='max-image-preview:large'/>
+        <link href='https://fonts.gstatic.com' crossorigin='anonymous' rel='preconnect'/>
+        <meta name="generator" content="WordPress 6.6"/>
+        <meta name="generator" content="WooCommerce 8.9.3"/>
+        <meta name="generator" content="webp-uploads 2.0.1">
+        <link rel="icon" href="../minilogo.png"/>
+        <link rel="shortcut icon" href="../minilogo.png"/>
+    </head>
+    <body>
+
+        <div class="container" id="container">
+            <section id="header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col t-logo">
+                            <a href="../index.html">
+                                <img class='light-logo' src="../darklogo.png">
+                            </a>
+                        </div>
+                        <ul id="menu-primary" class="col t-nav t-desktop">
+                            <li class="t-nav-link">
+                                <a href="../reviews/reviews.html">Отзывы</a>
+                            </li>
+                            <li class="t-nav-link">
+                                <a href="../help/help.html">Поддержка</a>
+                            </li>
+                            <li class="t-nav-link">
+                                <a href="../bonus/bonus.html">Бонусы и розыгрыши</a>
+                            </li>
+                        </ul>
+                            <div class="col-auto t-login">
+                                <a class="login-btn round-btn text-center" href="../accaunt/login.html">Войти </a>
+                            </div>
+                            <div class="col-auto t-menu">
+                                <a class="t-menu-ico menu-btn"></a>
+                            </div>
+                    </div>
+                </div>
+                <nav class="mobile-nav">
+                    <div class="mobile-nav__inner">
+                        <ul id="menu-mobile-menu" class="">
+                            <li class="pushy-link">
+                                <a href="reviews.html">Отзывы</a>
+                            </li>
+                            <li class="pushy-link">
+                                <a href="../help/help.html">Поддержка</a>
+                            </li>
+                            <li class="pushy-link">
+                                <a href="../bonus/bonus.html">Бонусы и розыгрыши</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <script>
+                    const menuButton = document.querySelector('.t-menu');
+                    const mobileNav = document.querySelector('.mobile-nav');
+
+                    menuButton.addEventListener('click', () => {
+                    mobileNav.classList.toggle('active');
+                    });
+                </script>
+            </section>
+        </div>
+        <div class="main-wrapper">
+            <div class="content-wrapper">
+                <div id="content-primary">
+                    <div class="container">
+                        <div class="row justify-content-center align-items-center mb-4">
+                            <h1 class="support-title text-center">Вход</h1>
+                        </div>
+                        <form id="login-form" class="block-section" method="post">
+                            <input type="hidden" id="login-nonce" name="security" value="52c52c1813"/>
+                            <div class="row">
+                                <div class="col-12">
+                                    <input type="email" class="form-control" name="username" id="emailInput" required autocomplete="email" placeholder="Электронная почта"/>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <input type="password" class="form-control mb-9" name="password" type="password" id="otherInput" required autocomplete="current-password" placeholder="Пароль">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-12 text-center d-flex justify-content-between">
+                                    <a href="registr.html">Регистрация </a>
+                                    <a class="t-forgot-link" href="https://coolgameservice.com/reset-password/">Забыли пароль? </a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <input type="hidden" id="woocommerce-login-nonce" name="woocommerce-login-nonce" value="90a7136c2a"/>
+                                    <input type="hidden" name="_wp_http_referer" value="/login/"/>
+                                    <button class="btn-login" type="submit" name="login" id="submitBtn" onclick="window.location.href='myAccaunt.html'">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                            <path d="M11.875 8.4375H14.375" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            <path d="M5.625 8.4375H8.125" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            <path d="M6.875 7.1875V9.6875" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            <path d="M13.4375 4.35156L6.56254 4.375C5.60765 4.37682 4.6838 4.7143 3.95258 5.32841C3.22136 5.94252 2.72932 6.79416 2.56254 7.73437V7.73437L1.28129 14.3047C1.19902 14.7635 1.26547 15.2366 1.47095 15.655C1.67643 16.0734 2.01019 16.4153 2.42357 16.6307C2.83695 16.8461 3.30833 16.9238 3.76898 16.8525C4.22964 16.7812 4.65548 16.5647 4.98441 16.2344V16.2344L8.35941 12.5L13.4375 12.4766C14.515 12.4766 15.5483 12.0486 16.3102 11.2867C17.072 10.5248 17.5 9.4915 17.5 8.41406C17.5 7.33662 17.072 6.30331 16.3102 5.54144C15.5483 4.77957 14.515 4.35156 13.4375 4.35156V4.35156Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            <path d="M17.4375 7.71094L18.7188 14.3047C18.801 14.7635 18.7346 15.2366 18.5291 15.655C18.3236 16.0734 17.9899 16.4153 17.5765 16.6307C17.1631 16.8461 16.6917 16.9238 16.2311 16.8525C15.7704 16.7812 15.3446 16.5647 15.0156 16.2344V16.2344L11.6406 12.4844" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                        </svg>
+                                        <span>Войти</span>
+                                    </button>
+                                    <script>
+                                        document.getElementById('submitBtn').addEventListener('click', function() {
+                                            const email = document.getElementById('emailInput').value;
+
+                                            // Проверка на корректность email
+                                            if (email.includes('@') && email.split('@').length === 2) {
+                                                const nickname = email.split('@')[0]; // Отрезаем всё после @
+
+                                                // Сохранение в локальном хранилище
+                                                localStorage.setItem('email', email);
+                                                localStorage.setItem('nickname', nickname);
+
+                                                // Перенаправление на страницу отображения
+                                                window.location.href = 'myAccaunt.html';
+                                            } else {
+                                                alert('Пожалуйста, введите корректный email.');
+                                            }
+                                        });
+                                    </script>
+
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <footer>
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-4 col-sm-8">
+                                <div class="menu-footer-container">
+                                    <ul id="menu-footer" class="row t-links">
+                                        <div class="col-auto">
+                                            <a rel="privacy-policy" href="https://coolgameservice.com/privacy-policy/">Конфиденциальность</a>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-8 col-sm-4">
+                                <div class="row t-s">
+                                    <div class="col-auto">
+                                        <a target="_blank" rel="nofollow" href="https://t.me/CoolGameService">
+                                            <noscript>
+                                                <img src="https://coolgameservice.com/wp-content/uploads/2023/09/telegram.svg" alt="https://t.me/CoolGameService">
+                                            </noscript>
+                                            <img class="lazyload" src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20210%20140%22%3E%3C/svg%3E' data-src="https://coolgameservice.com/wp-content/uploads/2023/09/telegram.svg" alt="https://t.me/CoolGameService">
+                                        </a>
+                                    </div>
+                                    <div class="col-auto hidden">
+                                        <a href="https://freekassa.ru" target="_blank" rel="noopener noreferrer">
+                                            <noscript>
+                                                <img src="https://cdn.freekassa.ru/banners/big-dark-1.png" title="Прием платежей на сайте">
+                                            </noscript>
+                                            <img class="lazyload" src='data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20210%20140%22%3E%3C/svg%3E' data-src="https://cdn.freekassa.ru/banners/big-dark-1.png" title="Прием платежей на сайте">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Проверка наличия сохраненного email
+        window.onload = function() {
+            const savedEmail = localStorage.getItem('email');
+            if (savedEmail) {
+                // Перенаправление на страницу отображения, если email найден
+                window.location.href = 'myAccaunt.html';
+            }
+        };
+    </script>
+    <script>
+        // Проверяем, есть ли сохраненный email в локальном хранилище
+        const savedEmail = localStorage.getItem('email');
+
+        if (savedEmail) {
+            // Получаем все ссылки с указанными классами
+            const links = document.querySelectorAll('.login-btn.round-btn.text-center');
+
+            // Применяем изменения
+            links.forEach(link => {
+                link.className = 'account-btn'; // Заменяем класс
+                link.textContent = ''; // Удаляем текст внутри ссылки
+                link.href = 'myAccaunt.html'; // Устанавливаем ссылку на файл myAccount.html
+            });
+        }
+    </script>
+
+
+
+
+</body>
+</html>

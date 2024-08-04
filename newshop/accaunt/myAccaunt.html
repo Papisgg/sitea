@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta itemprop="description" content="Магазин игрового доната!">
+        <meta itemprop="og:description" content="Магазин игрового доната!">
+        <link media="all" href="../cache/autoptimize/css/autoptimize_aaf5c9c3e99953ea307bc2b321fbbb73.css" rel="stylesheet">
+        <title>Epic Store</title>
+        <meta name='robots' content='max-image-preview:large'/>
+        <link href='https://fonts.gstatic.com' crossorigin='anonymous' rel='preconnect'/>
+        <meta name="generator" content="WordPress 6.6"/>
+        <meta name="generator" content="WooCommerce 8.9.3"/>
+        <meta name="generator" content="webp-uploads 2.0.1">
+        <link rel="icon" href="../minilogo.png"/>
+        <link rel="shortcut icon" href="../minilogo.png"/>
+    </head>
+<script>
+    document.querySelectorAll('.col-auto.t-login').forEach(link => {
+        link.className = 'account-btn'; // Меняем классы на account-btn
+    });
+
+            </script>
+<body>
+
+    <div class="container" id="container">
+        <section id="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col t-logo">
+                        <a href="../index.html">
+                            <img class='light-logo' src="../darklogo.png">
+                        </a>
+                    </div>
+                    <ul id="menu-primary" class="col t-nav t-desktop">
+                        <li class="t-nav-link">
+                            <a href="../reviews/reviews.html">Отзывы</a>
+                        </li>
+                        <li class="t-nav-link">
+                            <a href="../help/help.html">Поддержка</a>
+                        </li>
+                        <li class="t-nav-link">
+                            <a href="../bonus/bonus.html">Бонусы и розыгрыши</a>
+                        </li>
+                    </ul>
+                        <div class="col-auto t-login">
+                            <a class="login-btn round-btn text-center" href="../accaunt/login.html">Войти </a>
+                        </div>
+                        <div class="col-auto t-menu">
+                            <a class="t-menu-ico menu-btn"></a>
+                        </div>
+                </div>
+            </div>
+            <nav class="mobile-nav">
+                <div class="mobile-nav__inner">
+                    <ul id="menu-mobile-menu" class="">
+                        <li class="pushy-link">
+                            <a href="reviews.html">Отзывы</a>
+                        </li>
+                        <li class="pushy-link">
+                            <a href="../help/help.html">Поддержка</a>
+                        </li>
+                        <li class="pushy-link">
+                            <a href="../bonus/bonus.html">Бонусы и розыгрыши</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <script>
+                const menuButton = document.querySelector('.t-menu');
+                const mobileNav = document.querySelector('.mobile-nav');
+
+                menuButton.addEventListener('click', () => {
+                mobileNav.classList.toggle('active');
+                });
+            </script>
+        </section>
+    </div>
+        <div class="main-wrapper">
+            <div class="woocommerce">
+                <section id="profile">
+                    <div class="profile-header">
+                        <div class="container">
+                            <div class="profile-info-wrapper d-flex flex-column align-items-center">
+                                <div class="profile-img-wrapper">
+                                    <img src="../avatar.png" alt="">
+                                </div>
+
+                                <div class="profile-nickname">
+                                    <span id="nicknameDisplay"></span>
+                                </div>
+
+                                <div class="profile-line-wrapper">
+
+                                    <div class="t-profile-info-line">
+                                        E-mail:
+                                        <span id="emailDisplay"></span>
+                                    </div>
+
+                                </div>
+
+                                <div class="profile-logout">
+                                    <a href="" class="t-logout-btn">
+                                        Выйти с аккаунта
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <script>
+                    // Загрузка данных из локального хранилища при загрузке страницы
+                    window.onload = function() {
+                        const savedEmail = localStorage.getItem('email');
+                        const savedNickname = localStorage.getItem('nickname');
+
+                        if (savedEmail) {
+                            document.getElementById('emailDisplay').innerText = savedEmail;
+                        }
+
+                        if (savedNickname) {
+                            document.getElementById('nicknameDisplay').innerText = savedNickname;
+                        }
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Проверяем, есть ли сохраненный email в локальном хранилище
+        const savedEmail = localStorage.getItem('email');
+
+        if (savedEmail) {
+            // Получаем все ссылки с указанными классами
+            const links = document.querySelectorAll('.login-btn.round-btn.text-center');
+
+            // Применяем изменения
+            links.forEach(link => {
+                link.className = 'account-btn'; // Заменяем класс
+                link.textContent = ''; // Удаляем текст внутри ссылки
+                link.href = 'myAccaunt.html'; // Устанавливаем ссылку на файл myAccount.html
+            });
+        }
+    </script>
+    <script>
+        // Находим элемент с классом profile-logout
+        const logoutDiv = document.querySelector('.profile-logout');
+
+        // Добавляем обработчик события клика
+        if (logoutDiv) {
+            logoutDiv.addEventListener('click', () => {
+                // Очищаем локальное хранилище
+                localStorage.clear();
+                // Перенаправляем на страницу login.html
+                window.location.href = 'login.html';
+            });
+        }
+    </script>
+
+
+
+
+
+</body>
+</html>

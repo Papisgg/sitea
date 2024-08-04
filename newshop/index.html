@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="ru-RU">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta itemprop="description" content="Магазин игрового доната!">
+        <meta itemprop="og:description" content="Магазин игрового доната!">
+        <link media="all" href="cache/autoptimize/css/autoptimize_aaf5c9c3e99953ea307bc2b321fbbb73.css" rel="stylesheet">
+        <title>Epic Store</title>
+        <meta name='robots' content='max-image-preview:large'/>
+        <link href='https://fonts.gstatic.com' crossorigin='anonymous' rel='preconnect'/>
+        <meta name="generator" content="WordPress 6.6"/>
+        <meta name="generator" content="WooCommerce 8.9.3"/>
+        <meta name="generator" content="webp-uploads 2.0.1">
+        <link rel="icon" href="minilogo.png"/>
+        <link rel="shortcut icon" href="minilogo.png"/>
+    </head>
+<body>
+
+    <div class="container" id="container">
+        <section id="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col t-logo">
+                        <a href="http://localhost:5000">
+                            <img class='light-logo' src="darklogo.png">
+                        </a>
+                    </div>
+                    <ul id="menu-primary" class="col t-nav t-desktop">
+                        <li class="t-nav-link">
+                            <a href="reviews/reviews.html">Отзывы</a>
+                        </li>
+                        <li class="t-nav-link">
+                            <a href="help/help.html">Поддержка</a>
+                        </li>
+                        <li class="t-nav-link">
+                            <a href="bonus/bonus.html">Бонусы и розыгрыши</a>
+                        </li>
+                    </ul>
+                        <div class="col-auto t-login">
+                            <a class="login-btn round-btn text-center" href="accaunt/login.html">Войти </a>
+                        </div>
+                        <div class="col-auto t-menu">
+                            <a class="t-menu-ico menu-btn"></a>
+                        </div>
+                </div>
+            </div>
+            <nav class="mobile-nav">
+                <div class="mobile-nav__inner">
+                    <ul id="menu-mobile-menu" class="">
+                        <li class="pushy-link">
+                            <a href="reviews/reviews.html">Отзывы</a>
+                        </li>
+                        <li class="pushy-link">
+                            <a href="help/help.html">Поддержка</a>
+                        </li>
+                        <li class="pushy-link">
+                            <a href="bonus/bonus.html">Бонусы и розыгрыши</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <script>
+                const menuButton = document.querySelector('.t-menu');
+                const mobileNav = document.querySelector('.mobile-nav');
+
+                menuButton.addEventListener('click', () => {
+                mobileNav.classList.toggle('active');
+                });
+            </script>
+        </section>
+    </div>
+    <div class="main-wrapper">
+        <main id="primary" class="site-main">
+
+
+
+            <div class="container" id="container">
+                <div class="slider">
+                    <div class="slides">
+                        <div class="slide">
+
+                            <img src="slide1.png" alt="">
+
+                        </div>
+                        <div class="slide">
+
+                            <img src="slide2.png" alt="">
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <script>
+                let index = 0;
+                const slides = document.querySelector('.slides');
+                const totalSlides = document.querySelectorAll('.slide').length;
+
+                function showSlide() {
+                    slides.style.transform = `translateX(-${index * 100}%)`;
+                }
+
+                let startX, endX;
+                const threshold = 50;
+
+                document.querySelector('.slider').addEventListener('touchstart', e => {
+                    startX = e.touches[0].clientX;
+                });
+
+                document.querySelector('.slider').addEventListener('touchmove', e => {
+                    endX = e.touches[0].clientX;
+                });
+
+                document.querySelector('.slider').addEventListener('touchend', () => {
+                    if (startX - endX > threshold) {
+                        index = (index + 1) % totalSlides; // Свайп влево
+                    } else if (endX - startX > threshold) {
+                        index = (index - 1 + totalSlides) % totalSlides; // Свайп вправо
+                    }
+                    showSlide();
+                });
+
+                // Автоматическая смена слайдов
+                setInterval(() => {
+                    index = (index + 1) % totalSlides;
+                    showSlide();
+                }, 3000);
+            </script>
+
+
+
+
+
+
+
+            <section id='categories'>
+                <div class='container'>
+                    <div class='row'>
+                        <div class='col-12 t-subheading'>Товары</div>
+                    </div>
+                    <div class='catalog-grid'>
+
+                        <div class="custom-col">
+
+                            <a href="products/standoff/standoff.html" class="t-category-href">
+                                <div class="category-img-outer">
+                                    <img src="products/standoff/standoff.png" alt="" class="category-home-img">
+                                </div>
+
+                                <h3 class="text-center">Standoff 2</h3>
+                            </a>
+
+                        </div>
+                        <div class="custom-col">
+
+                            <a href="products/brawlStars/brawlStars.html" class="t-category-href">
+                                <div class="category-img-outer">
+                                    <img src="products/brawlStars/brawlStars.png" alt="" class="category-home-img">
+                                </div>
+
+                                <h3 class="text-center">Brawl Stars</h3>
+                            </a>
+
+                        </div>
+                        <div class="custom-col">
+
+                            <a href="products/clashOfclans/clashOfclans.html" class="t-category-href">
+                                <div class="category-img-outer">
+                                    <img src="products/clashOfclans/clashOfclans.png" alt="" class="category-home-img">
+                                </div>
+
+                                <h3 class="text-center">Clash of Clans</h3>
+                            </a>
+
+                        </div>
+                        <div class="custom-col">
+
+                            <a href="products/clashRoayle/clashRoayle.html" class="t-category-href">
+                                <div class="category-img-outer">
+                                    <img src="products/clashRoayle/clashRoyale.png" alt="" class="category-home-img">
+                                </div>
+
+                                <h3 class="text-center">Clash Royale</h3>
+                            </a>
+
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-4 col-sm-8">
+                    <div class="menu-footer-container">
+                        <ul id="menu-footer" class="row t-links">
+                            <div class="col-auto">
+                                <a rel="privacy-policy" href="">Конфиденциальность</a>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-8 col-sm-4">
+                    <div class="row t-s">
+                        <div class="col-auto">
+                            <a target="_blank" rel="nofollow" href=''>
+                                <noscript>
+                                    <img src="1.jpg" alt="">
+                                </noscript>
+                                <img class="lazyload" src='1.jpg' alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Проверяем, есть ли сохраненный email в локальном хранилище
+        const savedEmail = localStorage.getItem('email');
+
+        if (savedEmail) {
+            // Получаем все ссылки с указанными классами
+            const links = document.querySelectorAll('.login-btn.round-btn.text-center');
+
+            // Применяем изменения
+            links.forEach(link => {
+                link.className = 'account-btn'; // Заменяем класс
+                link.textContent = ''; // Удаляем текст внутри ссылки
+                link.href = 'accaunt/myAccaunt.html'; // Устанавливаем ссылку на файл myAccount.html
+            });
+        }
+    </script>
+
+
+
+</body>
+</html>
